@@ -20,4 +20,4 @@ jobs:
                 echo "Run ID:"
                 echo "Run number:"
             - name: Retreive variable
-              run: echo "MY_VAR"
+              run: echo "${{ vars.MY_VAR }}"
