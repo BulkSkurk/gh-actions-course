@@ -1,0 +1,23 @@
+name: 06 - Contexts
+on: 
+    workflow_dispatch:
+        inputs:
+            debug:
+                type: boolean
+                default: false
+run-name: 06 - Contexts | DEBUG - ${{ inputs.debug }}
+jobs:
+    echo-data:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Display Information
+              run: |
+                echo "Event name:"
+                echo "Ref:"
+                echo "SHA:"
+                echo "Actor:"
+                echo "Workflow:"
+                echo "Run ID:"
+                echo "Run number:"
+            - name: Retreive variable
+              run: echo "MY_VAR"
