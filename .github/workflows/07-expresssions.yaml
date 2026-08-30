@@ -1,5 +1,5 @@
 name: 07 - Using Expressions
-run-name: 07 - Learning to use expressions
+run-name: 07 - Learning to use expressions | DEBUG - ${{ inputs.debug  && 'ON' || 'OFF' }}
 on:
     workflow_dispatch:
         inputs:
