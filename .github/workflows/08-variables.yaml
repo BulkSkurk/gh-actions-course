@@ -44,10 +44,10 @@ jobs:
         - name: Print Prod variables
           run: |
             echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
-            echo "Environment var: ${{ vars.TARGET_VAR }}
+            echo "Environment var: ${{ vars.TARGET_VAR }}"
     echo-undefined:
-     runs-on: ubuntu-latest
-     steps:
+      runs-on: ubuntu-latest
+      steps:
        - name: Print Undefined Variables
          run: |
             echo "Org var: ${{ env.UNDEFINED_VAR_WITH_DEFAULT }}"
